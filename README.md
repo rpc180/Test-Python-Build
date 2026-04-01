@@ -4,6 +4,7 @@ winget install --id Python.Python.3.13 --source winget
 winget install --id Microsoft.PowerShell --source winget
 winget install --id Git.Git --source winget
 winget install --id GitHub.cli --source winget
+winget install --id Microsoft.AzureCLI --source winget
 
 Validate installations using a NEW terminal session
 winget --version
@@ -41,6 +42,20 @@ A good starter .vscode/settings.json for Python + PowerShell projects is:
 }
 
 That keeps project behavior consistent when the repo moves to another machine.
+
+Establish AZ login:
+Then open a new PowerShell window and run:
+
+az login
+
+If you have access to multiple tenants or subscriptions, also check which account you landed in:
+
+az account show
+az account list --output table
+
+If needed, set the right subscription:
+
+az account set --subscription "<your subscription name or id>"
 
 Python setup pattern
 
