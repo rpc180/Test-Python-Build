@@ -2,11 +2,14 @@ import os
 import sys
 from typing import Optional
 
+from dotenv import load_dotenv
+from pathlib import Path
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
 from azure.core.exceptions import ClientAuthenticationError
 
 
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 PROJECT_ENDPOINT_ENV = "AZURE_AI_PROJECT_ENDPOINT"
 AGENT_NAME_ENV = "AZURE_AI_AGENT_NAME"
 
