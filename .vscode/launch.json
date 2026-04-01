@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Foundry Agent Test",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/foundry_agent_chat.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
