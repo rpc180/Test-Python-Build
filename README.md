@@ -33,6 +33,7 @@ A good starter .vscode/settings.json for Python + PowerShell projects is:
 
 {
 "python.terminal.activateEnvironment": true,
+"python.terminal.useEnvFile": true,
 "files.trimTrailingWhitespace": true,
 "files.insertFinalNewline": true,
 "editor.formatOnSave": true,
