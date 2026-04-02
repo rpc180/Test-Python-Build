@@ -98,7 +98,7 @@ source .venv/bin/activate
 
 ---
 
-5️⃣ Select the Python Interpreter in VS Code ⚠️
+### 5️⃣ Select the Python Interpreter in VS Code ⚠️
 
 Even after activating the virtual environment, VS Code may still be using a different Python interpreter.
 
